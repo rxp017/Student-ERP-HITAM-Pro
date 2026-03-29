@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HITAM Student ERP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>HITAM Student ERP</h1>
+        <div class="logo">
+            <img src="https://firebasestorage.googleapis.com/v0/b/hitam-support.appspot.com/o/logo-main.png?alt=media&token=64f24f48-a0ad-44b2-9133-6de9847153d4" alt="HITAM Logo">
+        </div>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Roll Number" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <div class="erp-container" style="display: none;">
+        <div class="sidebar">
+            <div class="logo">
+                <img src="https://firebasestorage.googleapis.com/v0/b/hitam-support.appspot.com/o/logo-main.png?alt=media&token=64f24f48-a0ad-44b2-9133-6de9847153d4" alt="HITAM Logo">
+                <h2>HITAM</h2>
+            </div>
+            <ul>
+                <li><a href="#" data-content="academic-calendar">ACADEMIC CALENDAR</a></li>
+                <li><a href="#" data-content="academic-register">ACADEMIC REGISTER</a></li>
+                <li><a href="#" data-content="assignments-report">ASSIGNMENTS REPORT</a></li>
+                <li class="submenu">
+                    <a href="#" data-content="student-profile">STUDENT PROFILE</a>
+                    <ul>
+                        <li><a href="#" data-content="bio-data">BIO-DATA</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" data-content="attendance">ATTENDANCE</a></li>
+                 <li><a href="#" data-content="backlogs">BACKLOGS</a></li>
+                <li class="submenu">
+                    <a href="#" data-content="performance">PERFORMANCE</a>
+                    <ul>
+                        <li><a href="#" data-content="performance-present">PERFORMANCE (Present)</a></li>
+                        <li><a href="#" data-content="performance-past">PERFORMANCE (Past)</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" data-content="book-search">BOOK SEARCH</a></li>
+                <li><a href="#" data-content="fee-details">FEE DETAILS</a></li>
+                <li><a href="#" data-content="change-mobile">CHANGE MOBILE.NO\E-MAIL</a></li>
+                <li><a href="#" data-content="class-assignments">CLASS ASSIGNMENTS</a></li>
+                <li><a href="#" data-content="complaint-suggestion">COMPLAINT/SUGGESTION</a></li>
+                <li><a href="#" data-content="outings">OUTINGS</a></li>
+                <li><a href="#" data-content="counseling-details">COUNSELING DETAILS</a></li>
+                <li><a href="#" data-content="exam-schedule">EXAM-SCHEDULE</a></li>
+                <li><a href="#" data-content="disciplinary-action">DISCIPLINARY ACTION</a></li>
+                <li><a href="#" data-content="feedback">FEEDBACK</a></li>
+                <li><a href="#" data-content="spf-band-performance">SPF Band Performance</a></li>
+                <li><a href="#" data-content="lesson-plan">LESSON PLAN</a></li>
+                <li><a href="#" data-content="library-books">LIBRARY BOOKS</a></li>
+                <li><a href="#" data-content="marks">MARKS</a></li>
+                <li><a href="#" data-content="online-payment">ONLINE ΡΑΥΜΕΝΤ</a></li>
+                <li><a href="#" data-content="profile">PROFILE</a></li>
+                <li><a href="#" data-content="project-search">PROJECT SEARCH</a></li>
+                <li><a href="#" data-content="resources">RESOURCES</a></li>
+                <li><a href="#" data-content="time-table">ΤΙΜΕ ΤΑBLE</a></li>
+                <li><a href="#" data-content="topics-covered">TOPICS COVERED</a></li>
+                <li><a href="#" data-content="transport-request">TRANSPORT REQUEST</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="header">
+                <h1>Welcome, Student!</h1>
+                <button id="logout-btn">Logout</button>
+            </div>
+            <div id="content">
+                <!-- Content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <div class="chat-widget">
+        <div class="chat-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/134/134914.png" alt="Chat Icon">
+        </div>
+        <div class="chat-window" style="display: none;">
+            <p>We appreciate your interest in our chat feature. It's currently under development and will be available soon. Thank you for your patience!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
